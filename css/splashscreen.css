@@ -1,0 +1,74 @@
+:root{
+  --bg:#050913;
+  --glow:#b8e6ff;
+  --text:#e9f7ff;
+}
+html,body{
+  height:100%;
+  margin:0;
+  background: radial-gradient(1200px 600px at 50% 60%, #0c1424 0%, var(--bg) 60%, #000 100%);
+  color:var(--text);
+  font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  overflow:hidden;
+}
+/* Stars */
+.stars, .stars:after{
+  position:absolute; inset:0;
+  background: transparent;
+  box-shadow:
+    10vw 8vh #1a2a42, 25vw 12vh #142235, 40vw 20vh #16263b, 55vw 10vh #1b2f4d,
+    70vw 30vh #192a45, 85vw 18vh #15253c, 15vw 65vh #1b2e4b, 32vw 80vh #1a2a42,
+    50vw 70vh #1b2f4d, 68vw 55vh #192a45, 82vw 72vh #15253c, 5vw 50vh #1a2a42;
+  filter: blur(0.6px);
+  opacity:.6;
+  pointer-events:none;
+}
+.stars:after{
+  transform: translateY(10px);
+  opacity:.4;
+}
+h1{
+    color:white;
+    font-family:var(--glow);
+    font-size: 90px;;
+}
+.stage{
+  position:relative;
+  display:grid;
+  place-items:center;
+  height:100%;
+  content:"FEELSCAPE";
+  color:white;
+  text-align:center;
+}
+.title{
+  font-weight: 800;
+  color:white;
+  font-family: fantasy;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 8vw, 7rem);
+  text-shadow:
+    0 0 .5rem var(--glow),
+    0 0 1.2rem var(--glow),
+    0 0 2.5rem rgb(64, 67, 233);
+  opacity:0;
+  transform: scale(3);
+  filter: drop-shadow(0 0 25px rgba(122,210,255,.25));
+  will-change: transform, opacity, text-shadow;
+}
+@keyframes zoomOut{
+  0%   { opacity:0; transform: scale(3); }
+  20%  { opacity:1; }
+  100% { opacity:1; transform: scale(1); }
+}
+@keyframes pulse{
+  0%,100% { text-shadow: 0 0 .6rem var(--glow), 0 0 1.4rem var(--glow), 0 0 2.8rem #6ad0ff; }
+  50%     { text-shadow: 0 0 .2rem var(--glow), 0 0 .8rem var(--glow), 0 0 2rem #6ad0ff; }
+} */
+
+
+
+img{
+  background:100%;
+}
